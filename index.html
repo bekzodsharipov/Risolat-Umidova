@@ -6,7 +6,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Risolat Umidova</title>
   <style>
-* {margin: 0;padding: 0;box-sizing: border-box;}p {font: 400 1rem/normal Inter, system-ui, -apple-system, sans-serif;}body {background-color: #000;color: #fff;font: 400 16px/normal Inter, sans-serif;}.webinar-banner {padding-top: 17px;padding-bottom: 26px;}.container {max-width: 460px;width: 100%;padding: 0 10px;margin-left: auto;margin-right: auto;}.webinar-banner__content {text-align: center;border: 1px solid #7f7f7f;padding: 13px;padding-bottom: 36px;position: relative;margin-bottom: 17px;padding-bottom: 80px;}.webinar-banner__author-name {font: 400 32px/130% Italianno, sans-serif;text-align: center;color: #d7b685;margin-bottom: 17px;}.webinar-banner__title {font: 700 clamp(22px, 6.8vw, 32px)/130% Inter, sans-serif;margin-bottom: clamp(70px, 21vw, 84px);}.webinar-banner__title span {color: #fed190;}.webinar-banner__top {position: relative;}.webinar-banner__top-img {position: absolute;left: -30px;transform: rotate(-12.75deg);}.webinar-banner__top-imgs {position: absolute;right: -40px;top: 60px;transform: rotate(29.81deg);}.webinar-banner__image {position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);z-index: 10;display: flex;max-width: 247px;height: clamp(264px, 87.5vw, 342px);object-fit: contain;}.webinar-learn {position: relative;}.webinar-learn__shaddow {position: relative;}.webinar-learn__shaddow-one {position: absolute;background-color: #FED190CC;filter: blur(110px);width: 251px;height: 175px;left: 100px;top: 300px;}.webinar-learn__shaddow-two {position: absolute;background-color: #FED190CC;filter: blur(110px);width: 251px;height: 175px;right: 100px;top: 160px;}.webinar-learn__shaddow-three {position: absolute;background-color: #FED190CC;filter: blur(110px);width: 280px;height: 128px;bottom: 0;left: 100px;}.gradient {background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.12%, #000000 100%);width: 200%;height: 342px;position: absolute;z-index: 10;bottom: 0;}.speaker__gradient {background-color: #FACF8C40;filter: blur(50px);width: 162px;height: 183px;position: absolute;top: 230px;left: 35%;}.webinar-banner__meta {margin-bottom: 64px;padding: 0 5px;position: relative;z-index: 15;}.webinar-banner__meta-item {width: fit-content;padding-left: 5px;border-left: 1px solid #fff;text-align: left;font: 400 clamp(12px, 4vw, 14px)/130% Inter, sans-serif;}.webinar-banner__meta-item--date {margin-bottom: 50px;}.webinar-banner__meta-item--time {margin-left: auto;padding-right: 11px;}.webinar-banner__meta-label {color: #d7b685;}.webinar-banner__description {font: 400 clamp(9px, 3vw, 14px)/140% Inter, sans-serif;z-index: 15;position: absolute;left: 20%;bottom: 10px;}.webinar-banner__description span {color: #fed190;}.webinar-cta {display: block;margin: 0 auto;max-width: 405px;width: 100%;background: linear-gradient(87.17deg, #facf8c 0%, #fee3b9 57%, #facf8c 100%);box-shadow: 0 6px 0 0 #9c7636;border: none;border-radius: 6px;padding: 50px 20px;font: 700 22px/21.7px Inter, sans-serif;text-align: center;text-transform: uppercase;color: #463416;}@media (max-width:360px) {.webinar-banner__title {margin-bottom: clamp(40px, 14vw, 60px);}}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    p {
+      font: 400 1rem/normal Inter, system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font: 400 16px/normal Inter, sans-serif;
+    }
+
+    .webinar-banner {
+      padding-top: 17px;
+      padding-bottom: 26px;
+    }
+
+    .container {
+      max-width: 460px;
+      width: 100%;
+      padding: 0 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .webinar-banner__content {
+      text-align: center;
+      border: 1px solid #7f7f7f;
+      padding: 13px;
+      padding-bottom: 36px;
+      position: relative;
+      margin-bottom: 17px;
+      padding-bottom: 80px;
+    }
+
+    .webinar-banner__author-name {
+      font: 400 32px/130% Italianno, sans-serif;
+      text-align: center;
+      color: #d7b685;
+      margin-bottom: 17px;
+    }
+
+    .webinar-banner__title {
+      font: 700 clamp(22px, 6.8vw, 32px)/130% Inter, sans-serif;
+      margin-bottom: clamp(70px, 21vw, 84px);
+    }
+
+    .webinar-banner__title span {
+      color: #fed190;
+    }
+
+    .webinar-banner__top {
+      position: relative;
+    }
+
+    .webinar-banner__top-img {
+      position: absolute;
+      left: -30px;
+      transform: rotate(-12.75deg);
+    }
+
+    .webinar-banner__top-imgs {
+      position: absolute;
+      right: -40px;
+      top: 60px;
+      transform: rotate(29.81deg);
+    }
+
+    .webinar-banner__image {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      max-width: 247px;
+      height: clamp(264px, 87.5vw, 342px);
+      object-fit: contain;
+    }
+
+    .webinar-learn {
+      position: relative;
+    }
+
+    .webinar-learn__shaddow {
+      position: relative;
+    }
+
+    .webinar-learn__shaddow-one {
+      position: absolute;
+      background-color: #FED190CC;
+      filter: blur(110px);
+      width: 251px;
+      height: 175px;
+      left: 100px;
+      top: 300px;
+    }
+
+    .webinar-learn__shaddow-two {
+      position: absolute;
+      background-color: #FED190CC;
+      filter: blur(110px);
+      width: 251px;
+      height: 175px;
+      right: 100px;
+      top: 160px;
+    }
+
+    .webinar-learn__shaddow-three {
+      position: absolute;
+      background-color: #FED190CC;
+      filter: blur(110px);
+      width: 280px;
+      height: 128px;
+      bottom: 0;
+      left: 100px;
+    }
+
+    .gradient {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.12%, #000000 100%);
+      width: 200%;
+      height: 342px;
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+    }
+
+    .speaker__gradient {
+      background-color: #FACF8C40;
+      filter: blur(50px);
+      width: 162px;
+      height: 183px;
+      position: absolute;
+      top: 230px;
+      left: 35%;
+    }
+
+    .webinar-banner__meta {
+      margin-bottom: 64px;
+      padding: 0 5px;
+      position: relative;
+      z-index: 15;
+    }
+
+    .webinar-banner__meta-item {
+      width: fit-content;
+      padding-left: 5px;
+      border-left: 1px solid #fff;
+      text-align: left;
+      font: 400 clamp(12px, 4vw, 14px)/130% Inter, sans-serif;
+    }
+
+    .webinar-banner__meta-item--date {
+      margin-bottom: 50px;
+    }
+
+    .webinar-banner__meta-item--time {
+      margin-left: auto;
+      padding-right: 11px;
+    }
+
+    .webinar-banner__meta-label {
+      color: #d7b685;
+    }
+
+    .webinar-banner__description {
+      font: 400 clamp(9px, 5vw, 14px)/140% Inter, sans-serif;
+      z-index: 15;
+      position: absolute;
+      left: 20%;
+      bottom: 10px;
+    }
+
+    .webinar-banner__description span {
+      color: #fed190;
+    }
+
+    .webinar-cta {
+      display: block;
+      margin: 0 auto;
+      max-width: 405px;
+      width: 100%;
+      background: linear-gradient(87.17deg, #facf8c 0%, #fee3b9 57%, #facf8c 100%);
+      box-shadow: 0 6px 0 0 #9c7636;
+      border: none;
+      border-radius: 6px;
+      padding: 50px 20px;
+      font: 700 22px/21.7px Inter, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      color: #463416;
+    }
+
+    @media (max-width:400px) {
+      .webinar-cta {
+        padding: 40px 20px;
+      }
+
+      .webinar-banner__description {
+        left: 14%;
+      }
+    }
+
+    @media (max-width:360px) {
+      .webinar-banner__title {
+        margin-bottom: clamp(40px, 14vw, 60px);
+      }
+
+      .webinar-banner__description {
+        left: 7%;
+      }
+    }
   </style>
   <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
   <noscript>
@@ -104,7 +319,7 @@
       <div class="webinar-learn__bonus">
         <p class="webinar-learn__bonus__text">
           BEPUL qatnashishga ulguring:
-  
+
         </p>
         <p class="webinar-learn__bonus__timer">05:00</p>
       </div>
